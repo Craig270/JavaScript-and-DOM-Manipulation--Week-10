@@ -1,3 +1,3 @@
 "use strict";
-let buttonByClassName = document.getElementsByClassName("my-class");
-console.log(buttonByClassName);
+let buttonByCSSSelector = document.querySelectorAll("button.my-class");
+console.log(buttonByCSSSelector);
