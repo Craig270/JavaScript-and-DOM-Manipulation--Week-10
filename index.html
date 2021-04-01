@@ -4,34 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starting page</title>
+    <title>ToDo App</title>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
   </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 bg-success">
-          <p>This is a paragraph with more words and I just added more words</p>
+  <body class="container">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-start-date">Start Date</label>
+              <input type="date" class="form-control" id="new-start-date" />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-end-date">End Date</label>
+              <input type="date" class="form-control" id="new-end-date" />
+            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-task">Task</label>
+              <input
+                type="text"
+                class="form-control"
+                id="new-task"
+                placeholder="Enter your Task"
+              />
+            </div>
+          </div>
+        </div>
+        <button id="add" class="btn btn-primary from-control">Create</button>
       </div>
     </div>
-    <br />
-    <div class="container">
-      <div class="row">
-        <div class="cl-md-2 bg-warning">
-          <button id="my-button">Button 1</button>
-          <button>Button 2</button>
-          <button class="my-class">Button 3</button>
-          <button>Button 4</button>
-          <button class="my-class">Button 5</button>
-          <h1 class="my-class bg-success">Hello World</h1>
-        </div>
-      </div>
-    </div>
-    <script src="index.js"></script>
+    <table id="list" class="table table-dark table-striped">
+      <tr>
+        <th>Task</th>
+        <th>Date Created</th>
+        <th>Start Date</th>
+        <th>Due Date</th>
+        <th>Actions</th>
+      </tr>
+    </table>
+    <script src="todo.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
