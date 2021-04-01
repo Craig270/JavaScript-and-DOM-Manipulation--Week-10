@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .gFont {
+        font-family: "Caveat", cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <div class="row">
+      <div class="col-md-2 bg-dark"></div>
+
+      <div class="col-md-8 bg-light gFont">
+        <h1 class="text-center" style="font-size: 150px">
+          Your Favoirte Coffee
+        </h1>
+      </div>
+      <div class="col-md-2 bg-dark"></div>
+      <div class="col-md-12 bg-secondary text-center">
+        <a
+          ><img
+            src="https://www.thespruceeats.com/thmb/q-mTJ8ei_cRAhvG2BRGtnqIIby4=/3865x2174/smart/filters:no_upscale()/assorted-coffee-drinks-in-cups-on-coffee-beans-background-682103254-5abd8e8a3128340037f89265.jpg"
+            alt="4 coffee cups from above"
+            width="500"
+            height="300"
+        /></a>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <table id="coffee-table" class="table table-responsive gFont">
+          <thead>
+            <tr class="text-danger">
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Favorite Coffee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Craig</td>
+              <td>Neff</td>
+              <td>Iced Coffee</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jennifer</td>
+              <td>Neff</td>
+              <td>Drip Coffee</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Jesse</td>
+              <td>Stone</td>
+              <td>Espreso</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row bg-dark">
+      <div class="col-md-12 bg-dark">
+        <h1 class="text-center gFont" style="font-size: 70px">
+          Add your Favorite to our list in the section below
+        </h1>
+      </div>
+      <div class="col-md-3 bg-dark"></div>
+      <div class="col-md-8 bg-dark">
+        <form>
+          <div class="form-row">
+            <div class="col-auto">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First Name"
+                id="first-name"
+              />
+            </div>
+            <div class="col-auto">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Last Name"
+                id="last-name"
+              />
+            </div>
+            <div class="col-auto">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Favorite Coffee"
+                id="favorite-coffee"
+              />
+            </div>
+            <div class="col-auto">
+              <button
+                type="submit"
+                class="btn btn-primary mb-2"
+                id="add-coffee-button"
+              >
+                Add my Coffee!
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="coffee.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
