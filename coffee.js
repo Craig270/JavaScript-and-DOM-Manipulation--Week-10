@@ -7,11 +7,11 @@ favorite-coffee  : Users Entered Favorite Coffee.
 add-coffee-button   :  Button for submitting user entered data.
 
 */
-let id = 0;
+let id = 3;
 
 document.getElementById("add-coffee-button").addEventListener("click", () => {
   let table = document.getElementById("coffee-table");
-  let row = table.insertRow(id - 1); //Trying to insert at bottom of Table
+  let row = table.insertRow(id + 1); //Trying to insert at bottom of Table
   row.setAttribute("id", `item-${id}`);
   row.insertCell(0).innerHTML = document.getElementById("first-name").value;
   row.insertCell(1).innerHTML = document.getElementById("last-name").value;
