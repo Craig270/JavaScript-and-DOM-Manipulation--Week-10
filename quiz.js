@@ -1,8 +1,6 @@
 "use strict";
 
-let newP = document.querySelector("#p-button");
-
-newP.addEventListener("click", userEntry);
+document.querySelector("#p-button").addEventListener("click", userEntry);
 
 function userEntry() {
   let words = document.querySelector("#p-input").value;
